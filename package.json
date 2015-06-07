@@ -6,7 +6,7 @@
   "repository": "https://github.com/zerojuan/mechanical-keyboard-1",
   "license": "MIT",
   "engines": {
-    "atom": ">0.207.0"
+    "atom": ">0.206.0"
   },
   "dependencies": {}
 }
