@@ -1,3 +1,7 @@
+## 0.1.2 - Remember previous window's toggle settings
+* Added package setting 'Enabled'
+* Fix - sound plays too loud because listeners aren't unsubscribing
+
 ## 0.1.1 - Fixed deprecation errors
 * Toggle applies to every and future editor
 
