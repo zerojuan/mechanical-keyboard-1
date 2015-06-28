@@ -13,7 +13,7 @@ describe "MechanicalKeyboard", ->
   beforeEach ->
     workspaceView = atom.views.getView(atom.workspace)
 
-    activationPromise = atom.packages.activatePackage('mechanical-keyboard')
+    activationPromise = atom.packages.activatePackage('mechanical-keyboard-1')
 
     #make a default editor
     waitsForPromise ->
@@ -36,7 +36,7 @@ describe "MechanicalKeyboard", ->
         atom.commands.dispatch workspaceView, 'mechanical-keyboard:toggle'
 
     it "auto attaches to newly created editors", ->
-      
+
       waitsForPromise ->
         activationPromise
       runs ->
