@@ -1,3 +1,7 @@
+## 0.1.3
+* Use keydown instead of keyup
+* Lower volume
+
 ## 0.1.2 - Remember previous window's toggle settings
 * Added package setting 'Enabled'
 * Fix - sound plays too loud because listeners aren't unsubscribing
