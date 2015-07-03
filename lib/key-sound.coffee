@@ -13,6 +13,7 @@ class KeySound
     i = 0
     @buffers = while i++ < NUM_BUFFERS
       new Audio(VENDOR_DIR + '/' + fileName)
+    buffer.volume = 0.2 for buffer in @buffers
 
   play: ->
     @buffers[@index++ % NUM_BUFFERS].play()

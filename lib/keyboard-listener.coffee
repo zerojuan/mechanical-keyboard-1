@@ -26,9 +26,8 @@ class KeyboardListener
         when keyCode.SPACEBAR then spaceBarKey
         else otherKey
       keySound.play()
-    @editorView.keyup (sounder)
-
+    @editorView.keydown (sounder)
 
   unsubscribe: ->
     @editorView.removeClass 'mechanical-keyboard'
-    @editorView.off 'keyup'
+    @editorView.off 'keydown'
