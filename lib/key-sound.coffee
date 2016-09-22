@@ -16,4 +16,4 @@ class KeySound
     buffer.volume = 0.2 for buffer in @buffers
 
   play: ->
-    @buffers[@index++ % NUM_BUFFERS].play()
+    event.repeat || @buffers[@index++ % NUM_BUFFERS].play()
